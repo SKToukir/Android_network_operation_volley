@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:weightSum="4" android:background="@drawable/bg">
+
+    <LinearLayout
+        android:background="#faf9f9"
+        android:padding="1dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<TextView-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:text="Score:   "-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="25dp"
+                android:layout_height="21dp"
+                android:src="@drawable/coin"/>
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/txtScore"
+                android:text="00"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--<TextView-->
+                <!--android:text="00"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20sp"-->
+                <!--android:id="@+id/txtTimer"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <!--<TextView-->
+                <!--android:id="@+id/txtNumberOfQuestion"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20sp"-->
+                <!--android:text="4/20"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <ImageView
+                android:id="@+id/lifeOne"
+                android:src="@drawable/lifeicon"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <ImageView
+                android:id="@+id/lifeTwo"
+                android:src="@drawable/lifeicon"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <ImageView
+                android:id="@+id/lifeThree"
+                android:src="@drawable/lifeicon"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="12sp"
+            android:layout_gravity="center"
+            android:id="@+id/quesText"
+        android:textSize="20sp"
+            android:textColor="#f7f3f3"
+            android:text="Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_margin="5dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_margin="9dp"
+        android:background="@drawable/custom_button"
+        android:id="@+id/btnClueOne"
+        android:layout_width="250dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_height="40dp" />
+    <Button
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_margin="9dp"
+        android:background="@drawable/custom_button"
+        android:id="@+id/btnClueTwo"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+    <Button
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_margin="9dp"
+        android:background="@drawable/custom_button"
+        android:id="@+id/btnClueThree"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+    <Button
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_margin="9dp"
+        android:id="@+id/btnClueFour"
+        android:background="@drawable/custom_button"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+</LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#FFFCF9F9"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/txtMyAns"
+            android:textColor="#FFFCF9F9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/custom_button"
+            android:layout_margin="5dp"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:id="@+id/btnSubmit"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_width="200dp"
+            android:layout_height="45dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+</LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity" android:background="@drawable/colorbg">
+
+    <!--<ScrollView-->
+        <!--android:layout_below="@+id/view"-->
+        <!--android:id="@+id/scrolView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:weightSum="16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/topbar">
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:onClick="btnSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:padding="24dp"
+                android:background="@drawable/signin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#efd9d9"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PDF Reader"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="4.5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:onClick="btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:padding="24dp"
+                android:background="@drawable/menuedit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="4.45"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:onClick="btnMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:padding="24dp"
+                android:background="@drawable/menuoption"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="15dp"
+        android:background="@drawable/searchbg"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <SearchView
+                android:padding="5dp"
+                android:hint="Search"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/calc_txt_Prise"
+                android:layout_width="290dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:textStyle="bold"
+                android:singleLine="true" />
+
+
+
+        </FrameLayout>
+       <!--<EditText-->
+           <!--android:padding="5dp"-->
+           <!--android:text="Search"-->
+           <!--android:layout_width="250dp"-->
+           <!--android:layout_height="40dp"-->
+           <!--android:background="@drawable/rounded_edittext"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/gridViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

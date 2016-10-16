@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="com.example.toukir.networkoperation.RegistrationActivity" android:weightSum="9">
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="UITS Notice Board\nUser Registration"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/etName"
+        android:hint="Name"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/etPass"
+        android:hint="Password"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="56dp"
+        android:onClick="Register"
+        android:text="Register"
+        android:id="@+id/btnRegister"
+        android:layout_width="260dp"
+        android:layout_height="40dp" />
+</LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="if already register then "
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp" />
+        <TextView
+            android:id="@+id/linkTxt"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="click here "
+            android:textStyle="italic"
+            android:contextClickable="true"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp" />
+
+    </LinearLayout>
+</LinearLayout>

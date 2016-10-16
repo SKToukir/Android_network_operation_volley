@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UITS Online Notice System</string>
+    <string name="title_activity_list_all_notices">ListAllNoticesActivity</string>
+</resources>

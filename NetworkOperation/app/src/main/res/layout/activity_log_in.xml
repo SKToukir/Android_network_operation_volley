@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="3"
+    tools:context="com.example.toukir.networkoperation.LogInActivity" android:background="#000">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_margin="9dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/etLogInName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Name"/>
+
+        <EditText
+            android:layout_margin="9dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/etLogInPass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Password"/>
+
+        <Button
+            android:layout_margin="9dp"
+            android:background="@drawable/custom_button"
+            android:onClick="btnLogIn"
+            android:text="LigIn"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="if not register then "
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp" />
+        <TextView
+            android:id="@+id/linkTxt2"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="click here "
+            android:textStyle="italic"
+            android:contextClickable="true"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
